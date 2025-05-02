@@ -3,7 +3,7 @@ const fs = require('fs');
 const { generateToken } = require('./jwt.service');
 const { getTenantName, getBackupUrl } = require('./tenant.service');
 
-const getBackup = async (backupFile) => {
+const get = async (backupFile) => {
   try{
     const tenantName = getTenantName();
     const backupUrl = getBackupUrl(tenantName);
@@ -23,7 +23,7 @@ const getBackup = async (backupFile) => {
   }
 }
 
-const postBackup = async (backupFile) => {
+const set = async (backupFile) => {
   try{
     const tenantName = getTenantName();
     const backupUrl = getBackupUrl(tenantName);
@@ -46,6 +46,4 @@ const postBackup = async (backupFile) => {
   }
 }
 
-module.exports = {
-  getBackup, postBackup
-}
+module.exports = { get, set }

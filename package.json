@@ -1,0 +1,24 @@
+{
+  "name": "healthcare-agent-service",
+  "description": "POC to validate healthcare agent service API to manage scenarios.",
+  "version": "1.0.0",
+  "author": "jonasbbernardi@gmail.com",
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jonasbbernardi/healthcare-agent-service.git"
+  },
+  "homepage": "https://github.com/jonasbbernardi/healthcare-agent-service#readme",
+  "bugs": {
+    "url": "https://github.com/jonasbbernardi/healthcare-agent-service/issues"
+  }
+}
